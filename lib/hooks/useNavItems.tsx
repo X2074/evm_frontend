@@ -163,6 +163,12 @@ export default function useNavItems(): ReturnType {
         isActive: apiNavItems.some(item => isInternalItem(item) && item.isActive),
         subItems: apiNavItems,
       },
+      {
+        text: 'API',
+        icon: apiDocsIcon,
+        isActive: apiNavItems.some(item => isInternalItem(item) && item.isActive),
+        subItems: apiNavItems,
+      },
       config.UI.sidebar.otherLinks.length > 0 ? {
         text: 'Other',
         icon: gearIcon,
